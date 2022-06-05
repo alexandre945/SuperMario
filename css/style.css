@@ -7,7 +7,7 @@
 
 .game-board {
     width: 100%;
-    height: 500px;
+    height: 550px;
     border-bottom: 15px solid rgb(35, 160, 35);
     margin: 0 auto;
     position:relative;
@@ -30,6 +30,7 @@
     width: 80px;
     margin-right: 10px;
     animation: pipe-animation 1.7s infinite  linear;
+    
 
 
 }
@@ -40,6 +41,16 @@
     margin-top: 30px;
     animation: sky 20s infinite linear;
     background: transparent no-repeat;
+}
+.sun {
+    width:200px;
+    margin-left: 400px;
+    margin-top: 50px;
+    position: absolute;
+    box-sizing: border-box;
+    border: solid 1px rgb(108, 108, 189);
+    border-radius: 100px;
+    
 
 }
 @keyframes pipe-animation {

@@ -23,7 +23,7 @@ const loop = setInterval(() => {
        mario.style.animation = 'none'; 
        mario.style.bottom = `${marioPosition}px`;
 
-       mario.src = '../image/over.jpeg';
+       mario.src = '../image/images.jpeg';
        mario.style.width = '100px';
        mario.style.marginLeft = '50px';
 
