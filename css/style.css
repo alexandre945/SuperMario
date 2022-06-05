@@ -52,13 +52,14 @@
     border-radius: 100px;
 
 }
-.hover-game {
+.game {
     text-align: center;
     margin-top: 400px;
     height:150px;
     height: 120px;
-    position: absolute;
+    font-size: 30px;
     overflow: hidden;
+    color: darkred;
 }
 @keyframes pipe-animation {
     from {

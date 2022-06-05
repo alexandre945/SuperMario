@@ -18,6 +18,9 @@ const loop = setInterval(() => {
     const skyPosition = sky.offsetLeft;
     const marioPosition = + window.getComputedStyle(mario).bottom.replace('px', '');
 
+    const game = document.querySelector('.game');
+    const text = document.createTextNode('GAME HOVER');
+
     if (pipePosition < 120 && pipePosition > 0 && marioPosition < 80) {
        pipe.style.animation = 'none'; 
        pipe.style.left = `${pipePosition}px`;
@@ -31,6 +34,8 @@ const loop = setInterval(() => {
        mario.src = '../image/images.jpeg';
        mario.style.width = '100px';
        mario.style.marginLeft = '50px';
+
+       game.appendChild(text);
 
        clearInterval(loop);
     }
