@@ -5,7 +5,6 @@ document.addEventListener('keydown', (e) => {
     const mario = document.getElementById('mario');
     mario.classList.add('jump');
     setTimeout(() => {
-        const mario = document.getElementById('mario');
     mario.classList.remove('jump'); 
     }, 500)
 } );
