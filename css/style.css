@@ -29,7 +29,7 @@
     bottom: 0;
     width: 80px;
     margin-right: 10px;
-    animation: pipe-animation 1.7s infinite  linear;
+    animation: pipe-animation 1.6s infinite  linear;
     
 
 
@@ -50,8 +50,15 @@
     box-sizing: border-box;
     border: solid 1px rgb(108, 108, 189);
     border-radius: 100px;
-    
 
+}
+.hover-game {
+    text-align: center;
+    margin-top: 400px;
+    height:150px;
+    height: 120px;
+    position: absolute;
+    overflow: hidden;
 }
 @keyframes pipe-animation {
     from {

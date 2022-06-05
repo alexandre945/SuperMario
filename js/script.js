@@ -13,7 +13,9 @@ document.addEventListener('keydown', (e) => {
 const loop = setInterval(() => {
     const mario = document.getElementById('mario');
     const pipe = document.getElementById('pipe');
+    const sky = document.getElementById('sky');
     const pipePosition = pipe.offsetLeft;
+    const skyPosition = sky.offsetLeft;
     const marioPosition = + window.getComputedStyle(mario).bottom.replace('px', '');
 
     if (pipePosition < 120 && pipePosition > 0 && marioPosition < 80) {
@@ -22,6 +24,9 @@ const loop = setInterval(() => {
 
        mario.style.animation = 'none'; 
        mario.style.bottom = `${marioPosition}px`;
+
+       sky.style.animation = 'none';
+       sky.style.left = `${skyPosition}px`;
 
        mario.src = '../image/images.jpeg';
        mario.style.width = '100px';
