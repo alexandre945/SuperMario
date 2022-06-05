@@ -7,6 +7,7 @@
 + CSS
 + HTML
 ## Como rodar este projeto?
-+ Uma das maneiras é dando dois cliks na pasta index
++ Uma das maneiras é dando dois cliks na pasta index.html
 + E outro é usando extensão  do vs code chamada Live Server 
-+ Primeiro instale a extênção depois com botão direto na pasta index você seleciona open with Live Server
++ Primeiro instale a extênção depois com botão direto na pasta index.html você seleciona open with Live Server
++ Isso vai levantar um servidor para você na prota 5.500 do seu navegador
