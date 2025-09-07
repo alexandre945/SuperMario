@@ -19,6 +19,7 @@ const loop = setInterval(() => {
 
     const game = document.querySelector('.game');
     const text = document.createTextNode('GAME HOVER');
+    const restartBtn = document.getElementById('restart');
 
     if (pipePosition < 120 && pipePosition > 0 && marioPosition < 80) {
        pipe.style.animation = 'none'; 
@@ -35,6 +36,12 @@ const loop = setInterval(() => {
        mario.style.marginLeft = '50px';
 
        game.appendChild(text);
+
+         restartBtn.style.display = 'block'; // mostra botão
+
+        restartBtn.addEventListener('click', () => {
+            location.reload(); // recarrega a página
+        });
 
        clearInterval(loop);
     }
