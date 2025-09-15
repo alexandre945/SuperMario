@@ -11,21 +11,24 @@
 <body>
  
     <div class="game-board">
-        <img src="./image/sun.png"class="sun">
-        <img src="./image/nuven-5.png" id="sky"class="sky">
-        <img src="./image/mario-gif.gif" id="mario" >
-        <img src="./image/mario.png" id="pipe" class="paipe">
-        <div class="game">
-            <p></p>
-        </div>
-
+            <div id="score" style="font-size:24px; font-weight:bold; margin-bottom:10px;">
+              Score: 0
+            </div>
+            <img src="./image/sun.png"class="sun">
+            <img src="./image/nuven-5.png" id="sky"class="sky">
+            <img src="./image/mario-gif.gif" id="mario" >
+            <img src="./image/mario.png" id="pipe" class="paipe">
+            <div class="game">
+                <p></p>
+            </div>
+    </div>
      
 
+    <button id="restart" style="display:none; margin-top:20px;margin-bottom: 10PX; padding:10px ">REINICIAR</button>
+  
+        <div id="ranking"></div>
 
-    </div>
-     <div class="">
-        <button id="restart" style="display:none; padding:5px; border-radius: 6px; background-color: bisque; margin-top: 5px; margin-left: 100px;">Reiniciar</button>
-     </div>
+
     <script  src="./js/script.js"></script>
 </body>
 </html>
