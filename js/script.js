@@ -52,37 +52,47 @@ const loop = setInterval(() => {
        const text = document.createElement('h2');
        text.textContent = 'GAME OVER';
        game.appendChild(text);
+ 
+            // container para input e botão
+        const formContainer = document.createElement('div');
+        formContainer.style.display = "flex";
+        formContainer.style.flexDirection = "row"; // lado a lado
+        formContainer.style.justifyContent = "center";
+        formContainer.style.alignItems = "center";
+        formContainer.style.gap = "8px";
+       formContainer.style.marginBottom = "20px";
+        game.appendChild(formContainer);
 
-   
+        // input
+        const nameInput = document.createElement('input');
+        nameInput.placeholder = "Digite seu nome";
+        nameInput.id = "playerName";
+        formContainer.appendChild(nameInput);
 
-       // input para nome
-       const nameInput = document.createElement('input');
-       nameInput.placeholder = "Digite seu nome";
-       nameInput.id = "playerName";
-       game.appendChild(nameInput);
+        // botão
+        const saveBtn = document.createElement('button');
+        saveBtn.textContent = "Salvar Score";
+        formContainer.appendChild(saveBtn);
 
-       const saveBtn = document.createElement('button');
-       saveBtn.textContent = "Salvar Score";
-       game.appendChild(saveBtn);
-
-           //css
-         
+        // CSS input
         nameInput.style.padding = "10px";
         nameInput.style.border = "1px solid #ccc";
         nameInput.style.borderRadius = "6px";
         nameInput.style.width = "200px";
         nameInput.style.fontSize = "16px";
         nameInput.style.textAlign = "center";
-        nameInput.style.marginBottom = "50px";
         nameInput.style.color = "#000";
 
-        saveBtn.style.backgroundColor = "#3b82f6"; // azul
+        // CSS botão
+        saveBtn.style.backgroundColor = "#3b82f6"; 
         saveBtn.style.color = "#fff";
-        saveBtn.style.padding = "8px 16px";
+        saveBtn.style.padding = "10px 16px";
         saveBtn.style.borderRadius = "6px";
-        saveBtn.style.marginBottom = "10px";
         saveBtn.style.border = "none";
+        saveBtn.style.fontSize = "16px";
         saveBtn.style.cursor = "pointer";
+
+
 
        saveBtn.addEventListener('click', () => {
             const playerName = nameInput.value.trim();
